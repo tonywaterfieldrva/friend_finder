@@ -1,0 +1,30 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "node api and routes homework assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonywaterfieldrva/friend_finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonywaterfieldrva/friend_finder/issues"
+  },
+  "homepage": "https://github.com/tonywaterfieldrva/friend_finder#readme",
+  "dependencies": {
+    "app": "^0.1.0",
+    "exports": "0.0.1",
+    "express": "^4.17.1",
+    "json": "^9.0.6",
+    "node": "^12.13.0",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
+  }
+}
