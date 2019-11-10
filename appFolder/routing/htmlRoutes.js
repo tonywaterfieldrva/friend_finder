@@ -8,14 +8,19 @@ var path = require("path");
 module.exports = function(app) {
   // HTML GET Requests
   // ---------------------------------------------------------------------------
-
+// survey.html get api
 app.get("/survey", function(req, res) {
   //  console.log("inside get /survey");
     res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
 
- // If no matching route is found default to home
+ // home.html get api
   app.get("/home", function(req, res) {
+    //  console.log("inside get /home");
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
+// catch all if /home or /survey not requested
+  app.get("", function(req, res) {
     //  console.log("inside get /home");
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });

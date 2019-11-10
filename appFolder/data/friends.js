@@ -1,12 +1,12 @@
 // ===============================================================================
-// DATA
-// Below data will hold all of the load data for friends list .
+// DATA  -  friendData object/array export
+// ===============================================================================
 
 
 var friendData = [
     {
         "name": "Betsy Bumble Bee",
-        "photo": "./appFolder/images/BeautyBeast.PNG",
+        "photo": "https://cdn.pixabay.com/photo/2015/12/23/06/36/vector-1105214__340.png",
         "scores": [
         "5",
         "1",
@@ -21,24 +21,23 @@ var friendData = [
         ]
         },
         {
-        "name": "Sweet Caroline 1",
-        "photo": "./appFolder/images/BeautyBeast.PNG",
+        "name": "Caroline",
+        "photo": "https://cdn.pixabay.com/photo/2017/07/06/18/49/batgirl-2478979__340.jpg",
         "scores": [
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1"
-        ]
+        "3",
+        "4",
+        "5",
+        "4",
+        "2",
+        "4",
+        "2",
+        "3",
+        "5",
+        "3"   ]
         },
         {
-        "name": "Laura Eliza 5",
-        "photo": "./appFolder/images/BeautyBeast.PNG",
+        "name": "Laura Eliza",
+        "photo": "https://cdn.pixabay.com/photo/2015/01/11/07/07/moe-595960_1280.png",
         "scores": [
         "5",
         "5",
@@ -53,19 +52,19 @@ var friendData = [
         ]
         },
         {
-        "name": "Jaxie River Payne 4",
-        "photo": "./appFolder/images/BeautyBeast.PNG",
+        "name": "Jaxie Payne",
+        "photo": "https://cdn.pixabay.com/photo/2015/01/11/07/03/moe-595955__340.png",
         "scores": [
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4"
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
         ]
         }
 ];
