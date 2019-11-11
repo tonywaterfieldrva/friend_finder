@@ -241,33 +241,32 @@
 
         $.get("/api/friends", userData, function(data) {
            
-            lowDiff = 0;
-            lowName = userData.name;
-            lowPhoto = userData.photo;
+            lowDiff = 100;
+            lowName = "";
+            lowPhoto = "";
+            console.log(" get " + data.length);
             for (i = 0; i < data.length - 1; i++) {
-         //       console.log(i + " name: " + data[i].name);
+                console.log(i + " name: " + data[i].name);
                 var totalDiff = 0;
                 for (x = 0; x < data[i].scores.length; x++) {
                    var singleDiff = Math.abs(userData.scores[x] - data[i].scores[x]);
                    totalDiff = (totalDiff + singleDiff);
+                  
                 }
-                 if (lowDiff === 0) {
+                console.log(i + " totalDiff: " + totalDiff);
+                 if (totalDiff < lowDiff) {
                    lowDiff = totalDiff;
                    lowName = data[i].name;
                    lowPhoto = data[i].photo;
                 }
-                else if (totalDiff < lowDiff) {
-                    lowDiff = totalDiff;
-                    lowName = data[i].name;
-                    lowPhoto = data[i].photo;
-                }
-                else {
-                }
-        //        console.log("New Low Diff: " + lowName + " | " + lowPhoto + " | " + lowDiff);
-                }   
-          //    console.log("lowNameR: " + lowName);
-          //    console.log("lowPhotoR: " + lowPhoto);
-         //     console.log("ready to render match modal");
+
+    
+                console.log("totalDiff: " + totalDiff + " | lowDiff: " + lowDiff + " diff calc: " + (totalDiff - lowDiff));
+              console.log("New Low Diff: " + lowName + " | " + lowPhoto + " | " + lowDiff);
+             }   
+             console.log("lowNameR: " + lowName);
+             console.log("lowPhotoR: " + lowPhoto);
+             console.log("ready to render match modal");
               $("#match-name").text(lowName);
               $("#match-img").attr("src", lowPhoto);
 
