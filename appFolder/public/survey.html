@@ -17,7 +17,9 @@
   
   </head>
   <style>
-  
+    #match-img {
+      size: 100%;
+    }
 
   </style>
 </head>
@@ -261,12 +263,12 @@
                 }
 
     
-                console.log("totalDiff: " + totalDiff + " | lowDiff: " + lowDiff + " diff calc: " + (totalDiff - lowDiff));
-              console.log("New Low Diff: " + lowName + " | " + lowPhoto + " | " + lowDiff);
+     //      console.log("totalDiff: " + totalDiff + " | lowDiff: " + lowDiff + " diff calc: " + (totalDiff - lowDiff));
+     //      console.log("New Low Diff: " + lowName + " | " + lowPhoto + " | " + lowDiff);
              }   
-             console.log("lowNameR: " + lowName);
-             console.log("lowPhotoR: " + lowPhoto);
-             console.log("ready to render match modal");
+     //        console.log("lowNameR: " + lowName);
+     //        console.log("lowPhotoR: " + lowPhoto);
+     //        console.log("ready to render match modal");
               $("#match-name").text(lowName);
               $("#match-img").attr("src", lowPhoto);
 

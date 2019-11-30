@@ -22,4 +22,4 @@ Required npm packages:
     express
     path
 
-Custom javascript and css is included within the survey.html page 
+Local javascript included in survey.html page 

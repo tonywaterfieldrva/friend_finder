@@ -37,7 +37,8 @@ var friendData = [
         },
         {
         "name": "Laura Eliza",
-        "photo": "https://cdn.pixabay.com/photo/2015/01/11/07/07/moe-595960_1280.png",
+        "photo": "https://cdn.pixabay.com/photo/2017/01/31/17/32/blonde-2025777__340.png",
+
         "scores": [
         "5",
         "5",
